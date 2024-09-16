@@ -116,7 +116,7 @@ button{
     }
 
     #hero-section, p{
-        font-size: smaller;
+        font-size: medium;
         flex-direction: column;
     }
 
@@ -139,6 +139,7 @@ button{
         position: absolute;
         top: -4rem;
         right: 0rem;
+        bottom: -1rem;
         width: 21rem;
     }
 
