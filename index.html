@@ -5,6 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bg-color: #2D2934;
+    --primary: #A11A26;
+    --secondaru: #EFEFEF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    scrollbar-width: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    color: var(--bg-color);
+    background-color: #2D2934;
+
+}
+
+#header{
+    width: 100%;
+    top: 0;
+    position: fixed;
+    padding: 1.4rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.navbar-list, a{
+    color: white;
+    display: flex;
+    gap: 2rem;
+}
+
+#hero-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    color: #EFEFEF;
+
+}
+
+
+.hero-left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.button-container{
+    gap: 2rem;
+    display: flex;
+}
+
+button{
+    font-size: medium;
+    border: none;
+    background-color: var(--primary);
+    color: var(--secondaru);
+    border-radius: 0%;
+    margin-top: 2rem;
+    padding: 10px 2rem;
+}
+
+.hero-right{
+    width: 50%;
+    position: relative;
+}
+
+.img-ellen{
+    width: 45rem;
+    position: absolute;
+    bottom: -5rem;
+    right: -2rem;
+    z-index: 1;
+}
+
+.img-bg{
+    width: 45rem;
+    position: absolute;
+    bottom: -13rem;
+    right: -2rem;
+    z-index: 1;
+}
+
+#about{
+    width: 100%;
+    height: 100vh;
+}
+
+
+@media (max-width:786px) {
+    body{
+        color:#EFEFEF;
+        background-color: #2D2934;
+        font-size: 14px;
+    }
+
+    #header {
+        position: fixed;
+        padding: 5%;
+    }
+
+
+    .navbar{
+        display: none;
+    }
+
+    #hero-section, p{
+        font-size: smaller;
+        flex-direction: column;
+    }
+
+    .hero-left, .hero-right{
+        width: 100%;
+        height: 50%;
+        padding: 5%;
+
+    }
+
+
+    .img-ellen{
+        position: absolute;
+        top: -8rem;
+        right: -6rem;
+        width: 23rem;
+    }
+
+    .img-bg{
+        position: absolute;
+        top: -4rem;
+        right: -4rem;
+        width: 21rem;
+    }
+
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        width: 10rem;
+        gap: 1rem;
+    }
+
+    .button-container button{
+        font-size: small;
+        border: none;
+        border-radius: 0;
+        background-color: #A11A26;
+        color: #EFEFEF;
+        padding-inline: 10px 15px;
+        width: auto;
+    }
+
+}
+    </style>
 </head>
 <body>
 
