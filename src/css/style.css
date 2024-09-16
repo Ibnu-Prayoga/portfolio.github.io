@@ -130,7 +130,7 @@ button{
 
     .img-ellen{
         position: absolute;
-        top: -8rem;
+        bottom: 0;
         right: -6rem;
         width: 23rem;
     }
@@ -138,26 +138,24 @@ button{
     .img-bg{
         position: absolute;
         top: -4rem;
-        right: -4rem;
+        right: 0rem;
         width: 21rem;
     }
 
     .button-container{
+        gap: 2rem;
         display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
-        width: 10rem;
-        gap: 1rem;
+    }
+    
+    button{
+        font-size: medium;
+        border: none;
+        background-color: var(--primary);
+        color: var(--secondaru);
+        border-radius: 0%;
+        margin-top: 2rem;
+        padding: 5px 1rem;
     }
 
-    .button-container button{
-        font-size: small;
-        border: none;
-        border-radius: 0;
-        background-color: #A11A26;
-        color: #EFEFEF;
-        padding-inline: 10px 15px;
-        width: auto;
-    }
 
 }
