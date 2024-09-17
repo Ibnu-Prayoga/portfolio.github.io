@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
 
@@ -12,15 +12,15 @@
 
     <header id="header">
         <div class="logo"><h3><a href="#">Ibnu Prayoga</a></h3></div>
-        <nav class="navbar">
-            <ul class="navbar-list  ">
+        <nav>
+            <ul class="navbar" id="navbar">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Project</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <img  src="assets/images/menu.svg" alt="">
+        <img id="menu" src="/assets/images/menu.svg" alt="">
     </header>
 
     
@@ -32,12 +32,13 @@
             <div class="hero-left">
                 <div class="hero-container-left">
 
-                    <h1 id="typing-text-1">Hii, I' am Ibnu Prayoga</h1>
-                    <h1 id="typing-text-2">Frontend Developer</h1>
+                    <h1 class="typed-text">Hii, I' am Ibnu Prayoga</h1>
+                    <h1 id="typing2">Frontend Developer</h1>
+                    <span class="line" ></span>
                     <p>I recently graduated from high school and am diving into the world of web development. With a love for technology and a desire to create beautiful, functional websites, I'm currently learning and growing every day. Join me on my journey as I develop my skills and build amazing web experiences!</p>
                     <div class="button-container">
-                    <button id="myPortfolio">My Portfolio</button> 
-                    <button id="ccontactMe">Contact Me</button>
+                       <button class="my-portfolio">My Portfolio</button> 
+                       <button class="contact-me">Contact Me</button>
                     </div>
                 </div>
             </div>
@@ -45,8 +46,8 @@
 
             <div class="hero-right">
                 <div class="hero-container-right">
-                    <img class="img-bg" src="assets/images/Ellen Bg.png" alt="">
-                    <img class="img-ellen"  src="assets/images/Ellen Joe.png" alt="">
+                    <img class="img-bg" src="/assets/images/Ellen Bg.png" alt="">
+                    <img class="img-ellen"  src="/assets/images/Ellen Joe.png" alt="">
                 </div>
             </div>    
 
