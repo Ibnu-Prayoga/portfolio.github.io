@@ -30,6 +30,7 @@ body{
     position: fixed;
     padding: 1.4rem 10%;
     width: 100%;
+    height: 4rem;
     top: 0;
     background-color: var(--bg-color);
     z-index: 999;
@@ -39,6 +40,10 @@ body{
     color: var(--secondaru);
     display: flex;
     gap: 2rem;
+}
+
+.navbar h4, .ellen-pp{
+    display: none;
 }
 
 #menu{
@@ -67,8 +72,12 @@ body{
     display: block;
     width: 17rem;
     margin: 2% 0;
-    border-radius:5%;
+    border-radius:1px;
 
+}
+
+#btn-menu{
+    cursor: pointer;
 }
 
 .button-container{
@@ -131,6 +140,10 @@ body{
     z-index: 1;
 }
 
+.ellen-pp{
+    width: 40%;
+    
+}
 .img-bg{
     max-width: 100vh;
     width: 100%;
@@ -143,9 +156,54 @@ body{
 
 
 #about{
+    padding-bottom: 14rem;
+    width: 100%;
+    height: auto;
+    color: var(--secondaru);
+    background-color: #1f1c24;
+    padding: 2rem 10%;
+
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin: 4rem 0;
+}
+
+.about-text{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #ffffff25;
+}
+
+.about-button{
+    /* background-color: darkcyan; */
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.portfolio-container{
     width: 100%;
     height: 100vh;
-    background-color: #1b181f;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3rem;
+    padding: 2.4rem 10%;
+    background-color: #1f1c24;
+    color: var(--secondaru);
+    font-style: italic;
 }
 
 
@@ -179,7 +237,6 @@ body{
         padding: 5%;
         width: 15rem;
         height: 100vh;
-    
     }
 
     .navbar.active{
@@ -187,9 +244,47 @@ body{
     }
 
     .navbar a{
-        padding: 5%;
+        color: #efefefb7;
+        border-bottom:1px solid var(--secondaru);
         padding-bottom: 1rem;
-        border-bottom: 2px solid var(--secondaru);
+        transition: border 0.3 case;
+        
+    }
+    
+    .navbar a:hover{
+        color: var(--secondaru);
+        transform: scaleX(0);
+        transition: transform 0.3s linear;
+    }
+    
+    .profile-sidebar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #efefefb7;
+    }
+
+    .toggle:hover{
+        cursor: pointer;
+    }
+
+    .navbar h4{
+        padding-top: 1rem;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid var(--primary);
+        padding-bottom: 1.9rem;
+    }
+
+    .navbar .ellen-pp{
+        display: block;
+        border: 2px solid #efefefb7;
+        border-radius: 50%;
+    }
+
+    .navbar.active{
+        display: flex;
     }
 
     #hero-section, p{
@@ -242,4 +337,7 @@ body{
         z-index: 5;
     }
     
+    #about{
+        padding: 5%;
+    }
 }
